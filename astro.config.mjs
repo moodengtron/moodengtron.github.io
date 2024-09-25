@@ -14,7 +14,11 @@ export default defineConfig({
   integrations: [
     tailwind(),
     react(),
-    icon(),
-    playformCompress()
-  ]
+    icon({
+      include: {
+        tabler: ['*'],
+      },
+    }),
+    playformCompress(),
+  ],
 });

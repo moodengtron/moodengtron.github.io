@@ -1,0 +1,43 @@
+---
+import { Icon } from 'astro-icon/components';
+
+export interface Props {
+  text: string;
+  url: string | URL;
+  class?: string;
+}
+
+const { text, url, class: className = 'inline-block' } = Astro.props;
+---
+
+<div class="flex gap-12 text-white py-6">
+
+  <a href="https://x.com/moodengtron" target="_blank">
+<Icon
+      name="tabler:brand-x"
+      class="size-16 hover:text-zinc-300"
+    />
+  </a>
+
+    <a href="https://t.me/moodengtron" target="_blank">
+<Icon
+      name="tabler:brand-telegram"
+    class="size-16 hover:text-zinc-300"
+    />
+  </a>
+
+    <a href="https://github.com/moodengtron" target="_blank">
+<Icon
+      name="tabler:brand-github"
+      class="size-16 hover:text-zinc-300"
+    />
+  </a>
+
+  <a href="mailto:moodengtron@gmail.com" target="_blank">
+<Icon
+      name="tabler:mail"
+       class="size-16 hover:text-zinc-300"
+    />
+</a>
+
+</div>

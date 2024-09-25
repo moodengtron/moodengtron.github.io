@@ -1,0 +1,17 @@
+---
+
+interface Props {
+  flip: boolean
+}
+
+const { flip = true } = Astro.props;
+---
+
+
+<div class=`relative flex border-y-[18px] bg-red-700 overflow-x-hidden ${flip ? 'border-t-red-500' : 'border-b-red-500'}`>
+  <div class="py-6 whitespace-nowrap flex items-center justify-center w-full pb-5 font-heading tracking-widest">
+    {[...Array(6)].map(() =>
+   <span class="text-white font-bold  mx-4 text-md md:text-2xl">$MOODENG</span>
+    )}
+  </div>
+</div>
