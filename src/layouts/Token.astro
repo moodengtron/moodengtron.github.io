@@ -1,15 +1,19 @@
 ---
+import { Icon } from 'astro-icon/components';
+import Copy from '~/components/Copy';
 
+const contractAddr = 'TSJzGxAZndouVCSFeXT84uTZDLQnoBkDYC';
 ---
 
-<div class="w-100 bg-blue-700 p-16 p-8">
+<div class="w-100 bg-blue-700 md:p-16 p-8 px-2">
   <div class="max-w-7xl mx-auto w-full">
     <div class="flex gap-8 items-center justify-center flex-col">
-      <div class="bg-zinc-100 border-8 border-blue-400 p-3 rounded-xl flex justify-between w-fit gap-8">
-        <div>
-          <div class="uppercase text-blue-600 font-bold text-xl">Contract Address</div>
-          <div class="font-bold md:text-3xl text-xl break-all">TSJzGxAZndouVCSFeXT84uTZDLQnoBkDYC</div>
-        </div>
+      <div
+        class="bg-zinc-100 border-8 border-blue-400 p-3 rounded-xl flex justify-between items-center w-full md:w-fit gap-8"
+      >
+        <Copy copyText={contractAddr} client:only="react">
+          <Icon name="tabler:clipboard" class="size-8 md:size-10 text-neutral-800" />
+        </Copy>
       </div>
       <div class="flex flex-row items-center justify-between gap-6">
         <div class="border-8 border-blue-400 p-5 rounded-3xl flex justify-between w-fit gap-8 bg-blue-600 text-center">
