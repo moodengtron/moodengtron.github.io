@@ -1,0 +1,20 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const socials: { url: string; icon: string }[] = [
+  { url: 'https://x.com/moodengtron', icon: 'tabler:brand-x' },
+  { url: 'https://t.me/moodengtron', icon: 'tabler:brand-telegram' },
+  { url: 'https://github.com/moodengtron', icon: 'tabler:brand-github' },
+  { url: 'mailto:moodengtron@gmail.com', icon: 'tabler:mail' },
+];
+---
+
+<div class="flex gap-12 text-white py-6">
+  {
+    socials.map(({ url, icon }) => (
+      <a href={url} target="_blank">
+        <Icon name={icon} class="size-16 hover:text-zinc-300" />
+      </a>
+    ))
+  }
+</div>
