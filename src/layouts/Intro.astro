@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import SocialShare from '~/components/SocialShare.astro';
-import MooAlien from '~/assets/images/moodeng-alien.jpeg';
+import VideoFallback from '~/assets/images/new-buy.jpg';
 ---
 
 <div class="w-100 bg-zinc-900 p-12 md:p-24 border-t-[20px] border-zinc-600">
@@ -15,17 +15,10 @@ import MooAlien from '~/assets/images/moodeng-alien.jpeg';
             >TRON</span
           >
         </div>
-
-        <!-- <p class="text-white text-lg !mb-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt urna vel lacinia semper.
-          Maecenas non nisl sed ipsum tempus faucibus. Sed eget maximus magna. In metus massa, blandit vel ex non,
-          venenatis dignissim diam. Phasellus turpis urna, facilisis sed lobortis aliquam, volutpat vel odio.
-        </p> -->
-
         <SocialShare />
       </div>
       <div class="flex-1 w-full">
-        <Image src={MooAlien} alt="Hi I'm Moo Deng on TRON" class="rounded-lg border-8" />
+        <Image src={VideoFallback} alt="Moo Deng New Buy" class="rounded-xl text-center mx-auto" />
       </div>
     </div>
   </div>
