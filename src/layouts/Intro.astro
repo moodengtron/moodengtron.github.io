@@ -4,7 +4,7 @@ import SocialShare from '~/components/SocialShare.astro';
 import MooAlien from '~/assets/images/moodeng-alien.jpeg';
 ---
 
-<div class="w-100 bg-zinc-900 p-24 border-t-[20px] border-zinc-600">
+<div class="w-100 bg-zinc-900 p-12 md:p-24 border-t-[20px] border-zinc-600">
   <div class="max-w-7xl mx-auto w-full h-auto">
     <div class="flex gap-8 items-center justify-center flex-col lg:flex-row">
       <div class="flex-1 text-center lg:text-left">
@@ -24,7 +24,7 @@ import MooAlien from '~/assets/images/moodeng-alien.jpeg';
 
         <SocialShare />
       </div>
-      <div class="flex-1">
+      <div class="flex-1 w-full">
         <Image src={MooAlien} alt="Hi I'm Moo Deng on TRON" class="rounded-lg border-8" />
       </div>
     </div>
