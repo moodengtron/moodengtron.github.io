@@ -1,0 +1,17 @@
+---
+import Layout from '~/layouts/Layout.astro';
+import Header from '~/layouts/Header.astro';
+import Intro from '~/layouts/Intro.astro';
+import Marquee from '~/components/Marquee.astro';
+import Token from '~/layouts/Token.astro';
+---
+
+<Layout title="MOODENG">
+  <main>
+    <Header />
+    <Intro />
+    <Marquee flip={true} />
+    <Token />
+    <Marquee flip={false} />
+  </main>
+</Layout>
