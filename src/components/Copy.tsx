@@ -25,7 +25,7 @@ export default function Copy(props) {
       </div>
       <div
         onClick={() => writeClipboardText(copyText)}
-        className={`${hide ? 'animate-ping opacity-50' : ''} cursor-pointer px-1 py-3`}
+        className={`${hide ? 'animate-ping opacity-50' : ''} cursor-pointer p-2 md:p-4 ml-2 md:ml-4`}
       >
         {props.children}
       </div>
