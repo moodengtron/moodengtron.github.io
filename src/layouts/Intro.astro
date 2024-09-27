@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import VideoFallback from '~/assets/images/new-buy.jpg';
+import VideoFallback from '~/assets/images/moodeng-on-tron.png';
 ---
 
 <div class="w-100 bg-zinc-900 p-6 md:p-24 border-t-[20px] border-zinc-600">
@@ -18,16 +18,15 @@ import VideoFallback from '~/assets/images/new-buy.jpg';
           Moo Deng is a female pygmy hippopotamus born on July 10, 2024, at the Khao Kheow Open Zoo in Sriracha,
           Thailand. She has quickly become an internet sensation due to her adorable appearance and playful antics. Moo
           Deng was named after a pork dish. She is the offspring of Jonah and Tony, with siblings also named after pork
-          dishes, reflecting a playful naming trend at the zoo. Moo Deng's life, from her birth to her daily activities,
-          is meticulously documented and shared, making her a significant figure in the realm of internet animal
-          celebrities. The TRON token, MOODENG is the first token on the TRON network in her name, and this is a site
-          for the community (CTO) of Tron Enthusiasts who love Moo Deng.
+          dishes, reflecting a playful naming trend at the zoo. The TRON token, MOODENG is the first token on the TRON
+          network in her name, and this is a site for the community (CTO) of Tron Enthusiasts who love Moo Deng.
         </p>
       </div>
+
       <div class="flex-1 w-full">
-        <video autoplay loop class="rounded-xl">
+        <video autoplay loop muted class="rounded-xl mx-auto">
           <source src="/moodeng-tron.mp4" type="video/mp4" />
-          <Image src={VideoFallback} alt="Moo Deng New Buy" class="rounded-xl text-center mx-auto" />
+          <Image src={VideoFallback} alt="Moo Deng on TRON" class="rounded-xl text-center" />
         </video>
       </div>
     </div>
