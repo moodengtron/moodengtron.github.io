@@ -1,11 +1,17 @@
 ---
 import { Icon } from 'astro-icon/components';
 
-const socials: { url: string; icon: string; name: string }[] = [
+const socials: { url: string; icon: string; name: string; bg: string }[] = [
   { url: 'https://x.com/moodengtron', icon: 'tabler:brand-x', name: 'Follow us on Twitter' },
   { url: 'https://t.me/moodengtron', icon: 'tabler:brand-telegram', name: 'Join our Telegram channel' },
   { url: 'https://github.com/moodengtron', icon: 'tabler:brand-github', name: 'Visit our GitHub repository' },
   { url: 'mailto:moodengtron@gmail.com', icon: 'tabler:mail', name: 'Send us an email' },
+  {
+    url: 'https://dexscreener.com/tron/taxnxlq3u56qafn9vzza13yrwfc9sub8np',
+    icon: 'dexscreener',
+    name: 'Dexscreener',
+    bg: 'bg-black',
+  },
 ];
 ---
 
@@ -13,9 +19,12 @@ const socials: { url: string; icon: string; name: string }[] = [
   <div class="font-heading text-3xl md:text-4xl uppercase mb-4">Join the community</div>
   <div class="flex gap-8 w-full items-center justify-center">
     {
-      socials.map(({ url, icon, name }) => (
+      socials.map(({ url, icon, name, bg }) => (
         <a href={url} target="_blank" name={name} rel="noopener noreferrer" aria-label={name}>
-          <Icon name={icon} class="size-16 bg-white p-2 rounded-full border-4 border-neutral-800 hover:border-dashed" />
+          <Icon
+            name={icon}
+            class={`size-16 p-2 rounded-full border-4 border-neutral-800 hover:border-dashed ${bg ?? 'bg-white'}`}
+          />
         </a>
       ))
     }
