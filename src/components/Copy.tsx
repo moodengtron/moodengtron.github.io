@@ -18,10 +18,10 @@ export default function Copy(props) {
   }
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center w-full justify-between">
       <div>
         <div className="uppercase text-blue-600 font-bold text-xl">Contract Address</div>
-        <div className="font-bold md:text-2xl text-sm break-all">{copyText}</div>
+        <div className="font-bold text-2xl max-[600px]:text-sm break-all">{copyText}</div>
       </div>
       <div
         onClick={() => writeClipboardText(copyText)}

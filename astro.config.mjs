@@ -13,7 +13,7 @@ export default defineConfig({
     react(),
     icon({
       include: {
-        tabler: ['*'],
+        tabler: ['brand-x', 'brand-telegram', 'brand-github', 'mail', 'clipboard'],
       },
     }),
     sitemap(),

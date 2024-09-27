@@ -1,12 +1,11 @@
 ---
 import { Image } from 'astro:assets';
-import SocialShare from '~/components/SocialShare.astro';
 import VideoFallback from '~/assets/images/new-buy.jpg';
 ---
 
-<div class="w-100 bg-zinc-900 p-12 md:p-24 border-t-[20px] border-zinc-600">
+<div class="w-100 bg-zinc-900 p-6 md:p-24 border-t-[20px] border-zinc-600">
   <div class="max-w-7xl mx-auto w-full h-auto">
-    <div class="flex gap-8 items-center justify-center flex-col lg:flex-row">
+    <div class="flex gap-8 justify-center flex-col xl:flex-row">
       <div class="flex-1 text-center lg:text-left">
         <div class="font-bold text-2xl mb-6 text-white">
           Hi I'm <span class="font-heading text-white underline underline-offset-8 decoration-white text-3xl"
@@ -15,10 +14,21 @@ import VideoFallback from '~/assets/images/new-buy.jpg';
             >TRON</span
           >
         </div>
-        <SocialShare />
+        <p class="text-white text-lg !mb-0">
+          Moo Deng is a female pygmy hippopotamus born on July 10, 2024, at the Khao Kheow Open Zoo in Sriracha,
+          Thailand. She has quickly become an internet sensation due to her adorable appearance and playful antics. Moo
+          Deng was named after a pork dish. She is the offspring of Jonah and Tony, with siblings also named after pork
+          dishes, reflecting a playful naming trend at the zoo. Moo Deng's life, from her birth to her daily activities,
+          is meticulously documented and shared, making her a significant figure in the realm of internet animal
+          celebrities. The TRON token, MOODENG is the first token on the TRON network in her name, and this is a site
+          for the community (CTO) of Tron Enthusiasts who love Moo Deng.
+        </p>
       </div>
       <div class="flex-1 w-full">
-        <Image src={VideoFallback} alt="Moo Deng New Buy" class="rounded-xl text-center mx-auto" />
+        <video autoplay loop class="rounded-xl">
+          <source src="/moodeng-tron.mp4" type="video/mp4" />
+          <Image src={VideoFallback} alt="Moo Deng New Buy" class="rounded-xl text-center mx-auto" />
+        </video>
       </div>
     </div>
   </div>
