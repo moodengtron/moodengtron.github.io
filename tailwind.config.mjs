@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        logo: "url('/img/moodeng.png')",
+        logo: "url('/img/moodeng-hero.png')",
       },
 
       fontFamily: {
