@@ -16,7 +16,7 @@ const socials: { url: string; icon: string; name: string }[] = [
 
 <div class="flex w-full bg-yellow-400 items-center justify-center flex-col p-6 md:p-12">
   <div class="font-heading text-3xl md:text-4xl uppercase mb-4">Join the community</div>
-  <div class="flex gap-8 w-full items-center justify-center">
+  <div class="flex gap-8 gap-y-4 w-full items-center justify-center flex-wrap">
     {
       socials.map(({ url, icon, name }) => (
         <a href={url} target="_blank" name={name} rel="noopener noreferrer" aria-label={name}>
